@@ -26,7 +26,7 @@ public struct SpaceNewsListItemView: View {
             HStack(spacing: 10) {
                 KFImage(viewStore.imageURL)
                     .resizable()
-                    .frame(width: 120, height: 80)
+                    .frame(width: 120, height: 90)
                     .cornerRadius(10)
                 VStack(alignment: .leading, spacing: 5) {
                     Text(viewStore.title)
