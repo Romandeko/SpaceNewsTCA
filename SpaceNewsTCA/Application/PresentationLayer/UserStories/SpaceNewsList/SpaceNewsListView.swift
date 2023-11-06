@@ -8,6 +8,7 @@
 import Foundation
 import ComposableArchitecture
 import SwiftUI
+import HTTPTransport
 
 // MARK: - SpaceNewsListView
 
@@ -23,14 +24,19 @@ public struct SpaceNewsListView: View {
             NavigationView {
                 List {
                     ForEachStore(
-                        store.scope(state: \.items,
-                                    action: SpaceNewsListAction.item(id:action:)), content: { store in
-                                        Text("SAD")
-                                    }
+                        store.scope(
+                            state: \.items,
+                            action: SpaceNewsListAction.item(id:action:)
+                        ), content: { store in
+                            SpaceNewsListItemView(store: store)
+                        }
                     )
                     .navigationTitle("News")
                     .navigationBarTitleDisplayMode(.inline)
                 }
+            }
+            .onAppear {
+                viewStore.send(.onAppear)
             }
         }
     }
@@ -43,7 +49,7 @@ struct SpaceNewsListView_Previews: PreviewProvider {
         SpaceNewsListView(
             store: Store(
                 initialState: SpaceNewsListState(),
-                reducer: SpaceNewsListReducer()
+                reducer: SpaceNewsListReducer(articlesService: ArticleServiceImplementation(transport: HTTPTransport.init()))
             )
         )
     }

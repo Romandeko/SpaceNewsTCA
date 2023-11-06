@@ -15,8 +15,6 @@
 		3F55A33D2AF81C8F00BDA8A9 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A33C2AF81C8F00BDA8A9 /* ArticleService.swift */; };
 		3F55A33F2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A33E2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift */; };
 		3F55A3412AF81D2B00BDA8A9 /* ArticlePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */; };
-		3F55A3432AF81DA600BDA8A9 /* EventPlainObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3422AF81DA600BDA8A9 /* EventPlainObjects.swift */; };
-		3F55A3452AF81DBC00BDA8A9 /* LaunchPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3442AF81DBC00BDA8A9 /* LaunchPlainObject.swift */; };
 		3F55A3492AF81F4800BDA8A9 /* SpaceNewsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3482AF81F4800BDA8A9 /* SpaceNewsListItemView.swift */; };
 		3F55A34B2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A34A2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift */; };
 		3F55A34D2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A34C2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift */; };
@@ -27,7 +25,6 @@
 		3F55A3582AF826EA00BDA8A9 /* SpaceNewsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3572AF826EA00BDA8A9 /* SpaceNewsListState.swift */; };
 		3F55A35A2AF826F300BDA8A9 /* SpaceNewsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3592AF826F300BDA8A9 /* SpaceNewsListReducer.swift */; };
 		3FC14FD42AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC14FD32AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift */; };
-		3FC14FD62AF7D85200CDB9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */; };
 		3FC14FD82AF7D85300CDB9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC14FD72AF7D85300CDB9B9 /* Assets.xcassets */; };
 		3FC14FDB2AF7D85300CDB9B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC14FDA2AF7D85300CDB9B9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -38,8 +35,6 @@
 		3F55A33C2AF81C8F00BDA8A9 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		3F55A33E2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceImplementation.swift; sourceTree = "<group>"; };
 		3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePlainObject.swift; sourceTree = "<group>"; };
-		3F55A3422AF81DA600BDA8A9 /* EventPlainObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlainObjects.swift; sourceTree = "<group>"; };
-		3F55A3442AF81DBC00BDA8A9 /* LaunchPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPlainObject.swift; sourceTree = "<group>"; };
 		3F55A3482AF81F4800BDA8A9 /* SpaceNewsListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemView.swift; sourceTree = "<group>"; };
 		3F55A34A2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemState.swift; sourceTree = "<group>"; };
 		3F55A34C2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemAction.swift; sourceTree = "<group>"; };
@@ -50,7 +45,6 @@
 		3F55A3592AF826F300BDA8A9 /* SpaceNewsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListReducer.swift; sourceTree = "<group>"; };
 		3FC14FD02AF7D85200CDB9B9 /* SpaceNewsTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceNewsTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC14FD32AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsTCAApp.swift; sourceTree = "<group>"; };
-		3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FC14FD72AF7D85300CDB9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC14FDA2AF7D85300CDB9B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,8 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */,
-				3F55A3422AF81DA600BDA8A9 /* EventPlainObjects.swift */,
-				3F55A3442AF81DBC00BDA8A9 /* LaunchPlainObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,7 +211,6 @@
 			children = (
 				3F55A3392AF81BDD00BDA8A9 /* SpaceNewsPage */,
 				3F55A3372AF81BCA00BDA8A9 /* SpaceNewsList */,
-				3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -323,12 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F55A33F2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift in Sources */,
-				3F55A3452AF81DBC00BDA8A9 /* LaunchPlainObject.swift in Sources */,
 				3F55A3412AF81D2B00BDA8A9 /* ArticlePlainObject.swift in Sources */,
-				3F55A3432AF81DA600BDA8A9 /* EventPlainObjects.swift in Sources */,
 				3F55A34F2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift in Sources */,
 				3F55A33D2AF81C8F00BDA8A9 /* ArticleService.swift in Sources */,
-				3FC14FD62AF7D85200CDB9B9 /* ContentView.swift in Sources */,
 				3F55A34D2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift in Sources */,
 				3FC14FD42AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift in Sources */,
 				3F55A3582AF826EA00BDA8A9 /* SpaceNewsListState.swift in Sources */,

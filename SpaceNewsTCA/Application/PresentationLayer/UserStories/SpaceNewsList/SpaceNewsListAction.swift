@@ -16,11 +16,11 @@ public enum SpaceNewsListAction: Equatable {
     /// On appear action
     case onAppear
     
-    /// Update the list of items
-    case updateItems
+    /// Action for `ArticlesService` business logic
+    case articlesService(Result<ArticleServiceAction, ArticleServiceError>)
     
     // MARK: - Children
     
     /// Item action
-    case item(id: UUID, action: SpaceNewsListItemAction)
+    case item(id: Int, action: SpaceNewsListItemAction)
 }

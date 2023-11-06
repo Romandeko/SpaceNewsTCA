@@ -13,15 +13,31 @@ import HTTPTransport
 
 public struct SpaceNewsListReducer: Reducer {
     
+    // MARK: - Properties
+    
+    private let articlesService: ArticleService
+    
+    // MARK: - Initializers
+    
+    public init(
+        articlesService: ArticleService
+    ) {
+        self.articlesService = articlesService
+    }
+    
     // MARK: - Reducer
     
     public var body: some Reducer<SpaceNewsListState, SpaceNewsListAction> {
         Reduce { state, action in
             switch action {
             case .onAppear:
-                return .send(.updateItems)
-            case .updateItems:
-                let service = ArticleServiceImplementation(transport: HTTPTransport())
+                return articlesService
+                    .obtainArticles(limit: 10)
+                    .publish()
+                    .map(ArticleServiceAction.articlesObtained)
+                    .catchToEffect(SpaceNewsListAction.articlesService)
+            case.articlesService(.success(.articlesObtained(let articles))):
+                state.items = IdentifiedArray(uniqueElements: articles.map(SpaceNewsListItemState.init))
             default:
                 break
             }

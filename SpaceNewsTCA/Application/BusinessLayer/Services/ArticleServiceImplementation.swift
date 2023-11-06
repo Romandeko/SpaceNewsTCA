@@ -45,13 +45,4 @@ extension ArticleServiceImplementation: ArticleService {
         )
         return serviceCall(from: request, dataByKey: "results")
     }
-    
-    public func obtainArticle(withId id: Int) -> ServiceCall<ArticlePlainObject> {
-        let request = HTTPRequest(
-            httpMethod: .get,
-            endpoint: "/articles/\(id)/",
-            base: self.baseRequest
-        )
-        return serviceCall(from: request)
-    }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - ArticlePlainObject
 
-public struct ArticlePlainObject: Decodable {
+public struct ArticlePlainObject: Decodable, Equatable {
     
     // MARK: - Properties
     
@@ -40,12 +40,6 @@ public struct ArticlePlainObject: Decodable {
     /// Indicates if the article is featured or not.
     public let featured: Bool
     
-    /// The list of launches associated with the article.
-    public let launches: [LaunchPlainObject]
-    
-    /// The list of events associated with the article.
-    public let events: [EventPlainObject]
-    
     // MARK: - CodingKeys
     
     enum CodingKeys: String, CodingKey {
@@ -58,7 +52,5 @@ public struct ArticlePlainObject: Decodable {
         case publishedAt = "published_at"
         case updatedAt = "updated_at"
         case featured
-        case launches
-        case events
     }
 }

@@ -16,4 +16,14 @@ public struct SpaceNewsListState: Equatable {
     
     /// Array of identified items
     public var items = IdentifiedArrayOf<SpaceNewsListItemState>()
+    
+    // MARK: - Initializers
+    
+    public init(
+        items: IdentifiedArrayOf<SpaceNewsListItemState>
+    ) {
+        self.items = items
+    }
+    
+    public init() {}
 }

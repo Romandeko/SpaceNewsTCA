@@ -14,14 +14,25 @@ public struct SpaceNewsListItemState: Identifiable, Equatable {
     // MARK: - Properties
 
     /// Unique identifier
-    public let id: UUID = UUID()
+    public let id: Int
     
     /// The title of the article.
-    public let title: String = "What’s Happening in Space Policy?"
+    public let title: String
 
     /// The URL of the article's image.
-    public let imageURL: URL = URL(string: "https://spacepolicyonline.com/wp-content/uploads/2023/11/redwire-panel-300x131.png")!
+    public let imageURL: String
     
-    /// The date and time when the article was published.
-    public let publishedAt: String = "2023-11-05"
+    /// The news site name where the article is published.
+    public let newsSite: String
+    
+    // MARK: - Initializers
+    
+    public init(
+        articlePlain: ArticlePlainObject
+    ) {
+        self.id = articlePlain.id
+        self.title = articlePlain.title
+        self.imageURL = articlePlain.imageURL
+        self.newsSite = articlePlain.newsSite
+    }
 }

@@ -24,32 +24,19 @@ public struct SpaceNewsListItemView: View {
     public var body: some View {
         WithViewStore(store) { viewStore in
             HStack(spacing: 10) {
-                KFImage(viewStore.imageURL)
+                KFImage(URL(string: viewStore.imageURL))
                     .resizable()
                     .frame(width: 120, height: 90)
                     .cornerRadius(10)
                 VStack(alignment: .leading, spacing: 5) {
                     Text(viewStore.title)
-                        .font(.system(size: 22,weight: .semibold))
-                    Text(viewStore.publishedAt)
-                        .font(.system(size: 16))
+                        .font(.system(size: 15,weight: .semibold))
+                    Text(viewStore.newsSite)
+                        .font(.system(size: 13))
                 }
-                Spacer()
             }
-            .padding(.horizontal, 10)
         }
     }
 }
 
-// MARK: - Preview
 
-struct SpaceNewsListItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        SpaceNewsListItemView(
-            store: Store(
-                initialState: SpaceNewsListItemState(),
-                reducer: SpaceNewsListItemReducer()
-            )
-        )
-    }
-}
