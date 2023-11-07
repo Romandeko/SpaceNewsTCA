@@ -7,16 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F55A32C2AF81A0400BDA8A9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3F55A32B2AF81A0400BDA8A9 /* ComposableArchitecture */; };
+		3F55A32F2AF81ACD00BDA8A9 /* ServiceCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3F55A32E2AF81ACD00BDA8A9 /* ServiceCore */; };
+		3F55A3322AF81AD700BDA8A9 /* HTTPTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 3F55A3312AF81AD700BDA8A9 /* HTTPTransport */; };
+		3F55A3362AF81B7E00BDA8A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3352AF81B7E00BDA8A9 /* Constants.swift */; };
+		3F55A33B2AF81C3200BDA8A9 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A33A2AF81C3200BDA8A9 /* WebService.swift */; };
+		3F55A33D2AF81C8F00BDA8A9 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A33C2AF81C8F00BDA8A9 /* ArticleService.swift */; };
+		3F55A33F2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A33E2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift */; };
+		3F55A3412AF81D2B00BDA8A9 /* ArticlePlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */; };
+		3F55A3492AF81F4800BDA8A9 /* SpaceNewsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3482AF81F4800BDA8A9 /* SpaceNewsListItemView.swift */; };
+		3F55A34B2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A34A2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift */; };
+		3F55A34D2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A34C2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift */; };
+		3F55A34F2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A34E2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift */; };
+		3F55A3522AF8228400BDA8A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3F55A3512AF8228400BDA8A9 /* Kingfisher */; };
+		3F55A3542AF826D300BDA8A9 /* SpaceNewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3532AF826D300BDA8A9 /* SpaceNewsListView.swift */; };
+		3F55A3562AF826DD00BDA8A9 /* SpaceNewsListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3552AF826DD00BDA8A9 /* SpaceNewsListAction.swift */; };
+		3F55A3582AF826EA00BDA8A9 /* SpaceNewsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3572AF826EA00BDA8A9 /* SpaceNewsListState.swift */; };
+		3F55A35A2AF826F300BDA8A9 /* SpaceNewsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55A3592AF826F300BDA8A9 /* SpaceNewsListReducer.swift */; };
+		3FBE43F92AF8F56B008BB238 /* SpaceNewsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE43F82AF8F56B008BB238 /* SpaceNewsPageView.swift */; };
+		3FBE43FB2AF8F572008BB238 /* SpaceNewsPageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE43FA2AF8F572008BB238 /* SpaceNewsPageState.swift */; };
+		3FBE43FD2AF8F579008BB238 /* SpaceNewsPageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE43FC2AF8F579008BB238 /* SpaceNewsPageAction.swift */; };
+		3FBE43FF2AF8F580008BB238 /* SpaceNewsPageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE43FE2AF8F580008BB238 /* SpaceNewsPageReducer.swift */; };
 		3FC14FD42AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC14FD32AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift */; };
-		3FC14FD62AF7D85200CDB9B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */; };
 		3FC14FD82AF7D85300CDB9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC14FD72AF7D85300CDB9B9 /* Assets.xcassets */; };
 		3FC14FDB2AF7D85300CDB9B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC14FDA2AF7D85300CDB9B9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F55A3352AF81B7E00BDA8A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F55A33A2AF81C3200BDA8A9 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3F55A33C2AF81C8F00BDA8A9 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		3F55A33E2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceImplementation.swift; sourceTree = "<group>"; };
+		3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePlainObject.swift; sourceTree = "<group>"; };
+		3F55A3482AF81F4800BDA8A9 /* SpaceNewsListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemView.swift; sourceTree = "<group>"; };
+		3F55A34A2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemState.swift; sourceTree = "<group>"; };
+		3F55A34C2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemAction.swift; sourceTree = "<group>"; };
+		3F55A34E2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListItemReducer.swift; sourceTree = "<group>"; };
+		3F55A3532AF826D300BDA8A9 /* SpaceNewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListView.swift; sourceTree = "<group>"; };
+		3F55A3552AF826DD00BDA8A9 /* SpaceNewsListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListAction.swift; sourceTree = "<group>"; };
+		3F55A3572AF826EA00BDA8A9 /* SpaceNewsListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListState.swift; sourceTree = "<group>"; };
+		3F55A3592AF826F300BDA8A9 /* SpaceNewsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsListReducer.swift; sourceTree = "<group>"; };
+		3FBE43F82AF8F56B008BB238 /* SpaceNewsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsPageView.swift; sourceTree = "<group>"; };
+		3FBE43FA2AF8F572008BB238 /* SpaceNewsPageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsPageState.swift; sourceTree = "<group>"; };
+		3FBE43FC2AF8F579008BB238 /* SpaceNewsPageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsPageAction.swift; sourceTree = "<group>"; };
+		3FBE43FE2AF8F580008BB238 /* SpaceNewsPageReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsPageReducer.swift; sourceTree = "<group>"; };
 		3FC14FD02AF7D85200CDB9B9 /* SpaceNewsTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceNewsTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC14FD32AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsTCAApp.swift; sourceTree = "<group>"; };
-		3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FC14FD72AF7D85300CDB9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC14FDA2AF7D85300CDB9B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +62,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F55A3522AF8228400BDA8A9 /* Kingfisher in Frameworks */,
+				3F55A3322AF81AD700BDA8A9 /* HTTPTransport in Frameworks */,
+				3F55A32C2AF81A0400BDA8A9 /* ComposableArchitecture in Frameworks */,
+				3F55A32F2AF81ACD00BDA8A9 /* ServiceCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F55A3332AF81B4700BDA8A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F55A33A2AF81C3200BDA8A9 /* WebService.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F55A3342AF81B4D00BDA8A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3F55A3352AF81B7E00BDA8A9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3F55A3372AF81BCA00BDA8A9 /* SpaceNewsList */ = {
+			isa = PBXGroup;
+			children = (
+				3F55A3382AF81BD600BDA8A9 /* SpaceNewsListItem */,
+				3F55A3532AF826D300BDA8A9 /* SpaceNewsListView.swift */,
+				3F55A3572AF826EA00BDA8A9 /* SpaceNewsListState.swift */,
+				3F55A3552AF826DD00BDA8A9 /* SpaceNewsListAction.swift */,
+				3F55A3592AF826F300BDA8A9 /* SpaceNewsListReducer.swift */,
+			);
+			path = SpaceNewsList;
+			sourceTree = "<group>";
+		};
+		3F55A3382AF81BD600BDA8A9 /* SpaceNewsListItem */ = {
+			isa = PBXGroup;
+			children = (
+				3F55A3482AF81F4800BDA8A9 /* SpaceNewsListItemView.swift */,
+				3F55A34A2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift */,
+				3F55A34C2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift */,
+				3F55A34E2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift */,
+			);
+			path = SpaceNewsListItem;
+			sourceTree = "<group>";
+		};
+		3F55A3392AF81BDD00BDA8A9 /* SpaceNewsPage */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE43F82AF8F56B008BB238 /* SpaceNewsPageView.swift */,
+				3FBE43FA2AF8F572008BB238 /* SpaceNewsPageState.swift */,
+				3FBE43FC2AF8F579008BB238 /* SpaceNewsPageAction.swift */,
+				3FBE43FE2AF8F580008BB238 /* SpaceNewsPageReducer.swift */,
+			);
+			path = SpaceNewsPage;
+			sourceTree = "<group>";
+		};
 		3FC14FC72AF7D85200CDB9B9 = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +162,6 @@
 				3FC14FE32AF7D8EA00CDB9B9 /* ApplicationLayer */,
 				3FC14FE52AF7D8FA00CDB9B9 /* PresentationLayer */,
 				3FC14FE42AF7D8F400CDB9B9 /* BusinessLayer */,
-				3FC14FE82AF7D94B00CDB9B9 /* CoreLayer */,
 				3FC14FE62AF7D91700CDB9B9 /* Common */,
 				3FC14FE72AF7D94600CDB9B9 /* Models */,
 			);
@@ -115,6 +204,8 @@
 		3FC14FE62AF7D91700CDB9B9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3F55A3342AF81B4D00BDA8A9 /* Constants */,
+				3F55A3332AF81B4700BDA8A9 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -122,21 +213,16 @@
 		3FC14FE72AF7D94600CDB9B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F55A3402AF81D2B00BDA8A9 /* ArticlePlainObject.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		3FC14FE82AF7D94B00CDB9B9 /* CoreLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreLayer;
 			sourceTree = "<group>";
 		};
 		3FC14FE92AF7D97700CDB9B9 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				3FC14FD52AF7D85200CDB9B9 /* ContentView.swift */,
+				3F55A3392AF81BDD00BDA8A9 /* SpaceNewsPage */,
+				3F55A3372AF81BCA00BDA8A9 /* SpaceNewsList */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -144,6 +230,8 @@
 		3FC14FEA2AF7D9E200CDB9B9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3F55A33C2AF81C8F00BDA8A9 /* ArticleService.swift */,
+				3F55A33E2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,6 +259,12 @@
 			dependencies = (
 			);
 			name = SpaceNewsTCA;
+			packageProductDependencies = (
+				3F55A32B2AF81A0400BDA8A9 /* ComposableArchitecture */,
+				3F55A32E2AF81ACD00BDA8A9 /* ServiceCore */,
+				3F55A3312AF81AD700BDA8A9 /* HTTPTransport */,
+				3F55A3512AF8228400BDA8A9 /* Kingfisher */,
+			);
 			productName = SpaceNewsTCA;
 			productReference = 3FC14FD02AF7D85200CDB9B9 /* SpaceNewsTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +293,12 @@
 				Base,
 			);
 			mainGroup = 3FC14FC72AF7D85200CDB9B9;
+			packageReferences = (
+				3F55A32A2AF81A0400BDA8A9 /* XCRemoteSwiftPackageReference "TCA" */,
+				3F55A32D2AF81ACD00BDA8A9 /* XCRemoteSwiftPackageReference "service-core" */,
+				3F55A3302AF81AD700BDA8A9 /* XCRemoteSwiftPackageReference "http-transport" */,
+				3F55A3502AF8228400BDA8A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3FC14FD12AF7D85200CDB9B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,8 +325,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC14FD62AF7D85200CDB9B9 /* ContentView.swift in Sources */,
+				3F55A33F2AF81C9B00BDA8A9 /* ArticleServiceImplementation.swift in Sources */,
+				3F55A3412AF81D2B00BDA8A9 /* ArticlePlainObject.swift in Sources */,
+				3F55A34F2AF81F6A00BDA8A9 /* SpaceNewsListItemReducer.swift in Sources */,
+				3F55A33D2AF81C8F00BDA8A9 /* ArticleService.swift in Sources */,
+				3FBE43FD2AF8F579008BB238 /* SpaceNewsPageAction.swift in Sources */,
+				3F55A34D2AF81F6000BDA8A9 /* SpaceNewsListItemAction.swift in Sources */,
 				3FC14FD42AF7D85200CDB9B9 /* SpaceNewsTCAApp.swift in Sources */,
+				3F55A3582AF826EA00BDA8A9 /* SpaceNewsListState.swift in Sources */,
+				3F55A33B2AF81C3200BDA8A9 /* WebService.swift in Sources */,
+				3F55A3362AF81B7E00BDA8A9 /* Constants.swift in Sources */,
+				3F55A35A2AF826F300BDA8A9 /* SpaceNewsListReducer.swift in Sources */,
+				3FBE43FB2AF8F572008BB238 /* SpaceNewsPageState.swift in Sources */,
+				3F55A3492AF81F4800BDA8A9 /* SpaceNewsListItemView.swift in Sources */,
+				3FBE43FF2AF8F580008BB238 /* SpaceNewsPageReducer.swift in Sources */,
+				3F55A3562AF826DD00BDA8A9 /* SpaceNewsListAction.swift in Sources */,
+				3FBE43F92AF8F56B008BB238 /* SpaceNewsPageView.swift in Sources */,
+				3F55A3542AF826D300BDA8A9 /* SpaceNewsListView.swift in Sources */,
+				3F55A34B2AF81F5700BDA8A9 /* SpaceNewsListItemState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +478,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +507,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +543,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F55A32A2AF81A0400BDA8A9 /* XCRemoteSwiftPackageReference "TCA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Incetro/TCA.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3F55A32D2AF81ACD00BDA8A9 /* XCRemoteSwiftPackageReference "service-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Incetro/service-core";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3F55A3302AF81AD700BDA8A9 /* XCRemoteSwiftPackageReference "http-transport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Incetro/http-transport.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3F55A3502AF8228400BDA8A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F55A32B2AF81A0400BDA8A9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F55A32A2AF81A0400BDA8A9 /* XCRemoteSwiftPackageReference "TCA" */;
+			productName = ComposableArchitecture;
+		};
+		3F55A32E2AF81ACD00BDA8A9 /* ServiceCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F55A32D2AF81ACD00BDA8A9 /* XCRemoteSwiftPackageReference "service-core" */;
+			productName = ServiceCore;
+		};
+		3F55A3312AF81AD700BDA8A9 /* HTTPTransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F55A3302AF81AD700BDA8A9 /* XCRemoteSwiftPackageReference "http-transport" */;
+			productName = HTTPTransport;
+		};
+		3F55A3512AF8228400BDA8A9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F55A3502AF8228400BDA8A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FC14FC82AF7D85200CDB9B9 /* Project object */;
 }
