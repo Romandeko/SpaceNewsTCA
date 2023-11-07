@@ -17,13 +17,11 @@ public struct SpaceNewsListState: Equatable {
     /// Array of identified items
     public var items = IdentifiedArrayOf<SpaceNewsListItemState>()
     
-    // MARK: - Initializers
+    /// An instance of `spaceNewsPage`' submodule
+    public var newsPage : SpaceNewsPageState? = nil
     
-    public init(
-        items: IdentifiedArrayOf<SpaceNewsListItemState>
-    ) {
-        self.items = items
-    }
+    // MARK: - Navigation
     
-    public init() {}
+    /// If newsPage module is active
+    public var isNewsPageActive = false
 }

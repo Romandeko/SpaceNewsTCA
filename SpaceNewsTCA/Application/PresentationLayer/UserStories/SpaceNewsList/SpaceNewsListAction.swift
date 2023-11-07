@@ -21,6 +21,15 @@ public enum SpaceNewsListAction: Equatable {
     
     // MARK: - Children
     
+    /// Actions of child module `SpaceNewsPageAction`
+    case newsPage(SpaceNewsPageAction)
+    
     /// Item action
     case item(id: Int, action: SpaceNewsListItemAction)
+    
+    // MARK: - Navigation
+    
+    /// Setter for `isNewsPageActive` property binding
+    case setNewsPageActive(Bool)
+    
 }

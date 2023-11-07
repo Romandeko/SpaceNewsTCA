@@ -26,14 +26,32 @@ public struct SpaceNewsListView: View {
                     ForEachStore(
                         store.scope(
                             state: \.items,
-                            action: SpaceNewsListAction.item(id:action:)
-                        ), content: { store in
-                            SpaceNewsListItemView(store: store)
-                        }
+                            action: SpaceNewsListAction.item
+                        ),
+                        content: SpaceNewsListItemView.init
                     )
                     .navigationTitle("News")
                     .navigationBarTitleDisplayMode(.inline)
                 }
+                .background(
+                    NavigationLink(
+                        isActive: viewStore.binding(
+                            get: \.isNewsPageActive,
+                            send: SpaceNewsListAction.setNewsPageActive
+                        ),
+                        destination: {
+                            IfLetStore(
+                                store.scope(
+                                    state: \.newsPage,
+                                    action: SpaceNewsListAction.newsPage
+                                ), then: { store in
+                                    SpaceNewsPageView(store: store)
+                                }
+                            )
+                        },
+                        label: { EmptyView() }
+                    )
+                )
             }
             .onAppear {
                 viewStore.send(.onAppear)
@@ -49,7 +67,11 @@ struct SpaceNewsListView_Previews: PreviewProvider {
         SpaceNewsListView(
             store: Store(
                 initialState: SpaceNewsListState(),
-                reducer: SpaceNewsListReducer(articlesService: ArticleServiceImplementation(transport: HTTPTransport.init()))
+                reducer: SpaceNewsListReducer(
+                    articlesService: ArticleServiceImplementation(
+                        transport: HTTPTransport.init()
+                    )
+                )
             )
         )
     }

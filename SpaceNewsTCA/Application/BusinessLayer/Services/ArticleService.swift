@@ -15,6 +15,8 @@ public enum ArticleServiceAction: Equatable {
     // MARK: - Cases
     
     case articlesObtained([ArticlePlainObject])
+    
+    case articleWithIdObtained(ArticlePlainObject)
 }
 
 // MARK: - ArticleServiceError
@@ -30,4 +32,9 @@ public protocol ArticleService {
     ///   - limit: number of articles
     /// - Returns: all articles
     func obtainArticles(limit: Int) -> ServiceCall<[ArticlePlainObject]>
+    
+    /// Obtain article by Id
+    /// - Parameter id: id of article
+    /// - Returns: article by id
+    func obtainArticle(withId id: Int) -> ServiceCall<ArticlePlainObject>
 }

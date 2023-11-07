@@ -35,6 +35,9 @@ public struct SpaceNewsListItemView: View {
                         .font(.system(size: 13))
                 }
             }
+            .onTapGesture {
+                viewStore.send(.itemTapped(viewStore.id))
+            }
         }
     }
 }

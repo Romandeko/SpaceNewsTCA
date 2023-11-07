@@ -15,6 +15,7 @@ public struct SpaceNewsListReducer: Reducer {
     
     // MARK: - Properties
     
+    /// ArticleService instance
     private let articlesService: ArticleService
     
     // MARK: - Initializers
@@ -36,15 +37,23 @@ public struct SpaceNewsListReducer: Reducer {
                     .publish()
                     .map(ArticleServiceAction.articlesObtained)
                     .catchToEffect(SpaceNewsListAction.articlesService)
-            case.articlesService(.success(.articlesObtained(let articles))):
+            case .articlesService(.success(.articlesObtained(let articles))):
                 state.items = IdentifiedArray(uniqueElements: articles.map(SpaceNewsListItemState.init))
+            case .item(let id, action: .itemTapped):
+                state.newsPage = SpaceNewsPageState(id: id)
+                return .send(.setNewsPageActive(true))
+            case .setNewsPageActive(let value):
+                state.isNewsPageActive = value
             default:
                 break
             }
             return .none
         }
-        .forEach(\.items, action: /SpaceNewsListAction.item(id:action:)) {
+        .forEach(\.items, action: /SpaceNewsListAction.item) {
             SpaceNewsListItemReducer()
+        }
+        .ifLet(\.newsPage, action: /SpaceNewsListAction.newsPage) {
+            SpaceNewsPageReducer(articlesService: articlesService)
         }
     }
 }

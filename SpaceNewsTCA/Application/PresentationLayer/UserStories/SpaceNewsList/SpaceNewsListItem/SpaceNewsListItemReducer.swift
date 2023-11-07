@@ -17,10 +17,9 @@ public struct SpaceNewsListItemReducer: Reducer {
     public var body: some Reducer<SpaceNewsListItemState, SpaceNewsListItemAction> {
         Reduce { state, action in
             switch action {
-            case .onAppear:
-                print("Chto dolzno byt zdes....Pochemy u menya netu actions?????")
+            default:
+                return .none
             }
-            return .none
         }
     }
 }

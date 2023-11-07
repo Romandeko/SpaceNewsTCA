@@ -11,8 +11,6 @@ import Foundation
 
 public enum SpaceNewsListItemAction: Equatable {
     
-    // MARK: - Cases
-    
-    /// On appear action
-    case onAppear
+    /// Whe item is tapped action
+    case itemTapped(Int)
 }
