@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
-
 // MARK: - SpaceNewsPageState
 
 public struct SpaceNewsPageState: Equatable {
@@ -19,10 +17,10 @@ public struct SpaceNewsPageState: Equatable {
     
     /// The title of the article
     public var title: String
-
-    /// The string for URL of the article's image
-    public var stringForImageURL: String
-
+    
+    /// The URL of the article's image
+    public var imageURL: URL?
+    
     /// A summary  of the article content
     public var summary: String
     
@@ -32,16 +30,6 @@ public struct SpaceNewsPageState: Equatable {
     /// If article is added to favourite
     public var isArticleAddedToFavourite = false
     
-    /// The URL of the article's image
-    public var imageURL: URL? {
-        URL(string: stringForImageURL)
-    }
-    
-    /// Color of add to favourite button image
-    public var addToFavouriteImageColor: Color {
-        isArticleAddedToFavourite ? .red : .black
-    }
-    
     // MARK: - Initializers
     
     public init(
@@ -49,7 +37,7 @@ public struct SpaceNewsPageState: Equatable {
     ) {
         self.id = id
         self.title = ""
-        self.stringForImageURL = ""
+        self.imageURL = nil
         self.summary = ""
         self.newsSite = ""
     }
@@ -59,8 +47,8 @@ public struct SpaceNewsPageState: Equatable {
 
 extension SpaceNewsPageState {
     
-    /// Published by text
-    public var publishedBy: String {
+    /// News site that published the article text
+    public var publisherNewsSiteText: String {
         "Published by \(newsSite)"
     }
 }

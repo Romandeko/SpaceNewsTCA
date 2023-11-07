@@ -32,7 +32,7 @@ public struct SpaceNewsPageView: View {
                     Text(viewStore.title)
                         .font(.system(size: 22, weight: .bold))
                     HStack(spacing: 3) {
-                        Text(viewStore.publishedBy)
+                        Text(viewStore.publisherNewsSiteText)
                             .font(.system(size: 19, weight: .semibold))
                         Spacer()
                         Button {
@@ -42,7 +42,11 @@ public struct SpaceNewsPageView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 20, height: 20)
-                                .foregroundColor(viewStore.addToFavouriteImageColor)
+                                .foregroundColor(
+                                    viewStore.isArticleAddedToFavourite
+                                    ? .red
+                                    : .black
+                                )
                         }
                     }
                     Text(viewStore.summary)

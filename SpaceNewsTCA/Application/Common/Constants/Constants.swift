@@ -17,5 +17,8 @@ public enum Constants {
         
         /// URL for spaceflightnewsapi
         public static let apiURL = URL(string: "https://api.spaceflightnewsapi.net/v4").unsafelyUnwrapped
+        
+        /// Limit for obtained articles
+        public static let articlesLimit = 10
     }
 }

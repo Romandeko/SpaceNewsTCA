@@ -20,9 +20,7 @@ public struct SpaceNewsListReducer: Reducer {
     
     // MARK: - Initializers
     
-    public init(
-        articlesService: ArticleService
-    ) {
+    public init(articlesService: ArticleService) {
         self.articlesService = articlesService
     }
     
@@ -33,7 +31,7 @@ public struct SpaceNewsListReducer: Reducer {
             switch action {
             case .onAppear:
                 return articlesService
-                    .obtainArticles(limit: 10)
+                    .obtainArticles(limit: Constants.NetWork.articlesLimit)
                     .publish()
                     .map(ArticleServiceAction.articlesObtained)
                     .catchToEffect(SpaceNewsListAction.articlesService)

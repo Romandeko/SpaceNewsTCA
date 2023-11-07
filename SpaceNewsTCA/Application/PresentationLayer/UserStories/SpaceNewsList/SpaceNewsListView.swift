@@ -19,6 +19,8 @@ public struct SpaceNewsListView: View {
     /// The store powering the `SpaceNewsList` Reducer
     public let store: StoreOf<SpaceNewsListReducer>
     
+    // MARK: - View
+    
     public var body: some View {
         WithViewStore(store) { viewStore in
             NavigationView {
@@ -44,9 +46,8 @@ public struct SpaceNewsListView: View {
                                 store.scope(
                                     state: \.newsPage,
                                     action: SpaceNewsListAction.newsPage
-                                ), then: { store in
-                                    SpaceNewsPageView(store: store)
-                                }
+                                ),
+                                then: SpaceNewsPageView.init
                             )
                         },
                         label: { EmptyView() }
@@ -69,7 +70,7 @@ struct SpaceNewsListView_Previews: PreviewProvider {
                 initialState: SpaceNewsListState(),
                 reducer: SpaceNewsListReducer(
                     articlesService: ArticleServiceImplementation(
-                        transport: HTTPTransport.init()
+                        transport: HTTPTransport()
                     )
                 )
             )

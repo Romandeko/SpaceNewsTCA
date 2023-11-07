@@ -16,7 +16,7 @@ public enum SpaceNewsPageAction: Equatable {
     /// On appear action
     case onAppear
     
-    /// Setter for 'isArticleAddedToFavourite' property binding
+    /// Setter for `isArticleAddedToFavourite` property binding
     case addToFavourite
     
     /// Action for `ArticlesService` business logic

@@ -40,7 +40,7 @@ public struct SpaceNewsPageReducer: Reducer {
                 state.title = article.title
                 state.newsSite = article.newsSite
                 state.summary = article.summary
-                state.stringForImageURL = article.imageURL
+                state.imageURL = article.imageURL
             case .addToFavourite:
                 state.isArticleAddedToFavourite.toggle()
             default:

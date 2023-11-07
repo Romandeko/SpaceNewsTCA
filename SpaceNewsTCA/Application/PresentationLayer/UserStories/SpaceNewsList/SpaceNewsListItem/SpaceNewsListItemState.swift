@@ -20,7 +20,7 @@ public struct SpaceNewsListItemState: Identifiable, Equatable {
     public let title: String
 
     /// The URL of the article's image.
-    public let imageURL: String
+    public let imageURL: URL
     
     /// The news site name where the article is published.
     public let newsSite: String

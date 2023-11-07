@@ -12,5 +12,5 @@ import Foundation
 public enum SpaceNewsListItemAction: Equatable {
     
     /// Whe item is tapped action
-    case itemTapped(Int)
+    case itemTapped
 }

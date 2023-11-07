@@ -24,7 +24,7 @@ public struct SpaceNewsListItemView: View {
     public var body: some View {
         WithViewStore(store) { viewStore in
             HStack(spacing: 10) {
-                KFImage(URL(string: viewStore.imageURL))
+                KFImage(viewStore.imageURL)
                     .resizable()
                     .frame(width: 120, height: 90)
                     .cornerRadius(10)
@@ -36,7 +36,7 @@ public struct SpaceNewsListItemView: View {
                 }
             }
             .onTapGesture {
-                viewStore.send(.itemTapped(viewStore.id))
+                viewStore.send(.itemTapped)
             }
         }
     }

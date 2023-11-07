@@ -16,20 +16,21 @@ public enum SpaceNewsListAction: Equatable {
     /// On appear action
     case onAppear
     
-    /// Action for `ArticlesService` business logic
-    case articlesService(Result<ArticleServiceAction, ArticleServiceError>)
-    
     // MARK: - Children
     
     /// Actions of child module `SpaceNewsPageAction`
     case newsPage(SpaceNewsPageAction)
     
     /// Item action
-    case item(id: Int, action: SpaceNewsListItemAction)
+    case item(id: SpaceNewsListItemState.ID, action: SpaceNewsListItemAction)
     
     // MARK: - Navigation
     
     /// Setter for `isNewsPageActive` property binding
     case setNewsPageActive(Bool)
     
+    // MARK: - Services
+    
+    /// Action for `ArticlesService` business logic
+    case articlesService(Result<ArticleServiceAction, ArticleServiceError>)
 }

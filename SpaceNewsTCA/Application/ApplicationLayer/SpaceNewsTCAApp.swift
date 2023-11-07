@@ -18,7 +18,7 @@ struct SpaceNewsTCAApp: App {
                     initialState: SpaceNewsListState(),
                     reducer: SpaceNewsListReducer(
                         articlesService: ArticleServiceImplementation(
-                            transport: HTTPTransport.init()
+                            transport: HTTPTransport()
                         )
                     )
                 )

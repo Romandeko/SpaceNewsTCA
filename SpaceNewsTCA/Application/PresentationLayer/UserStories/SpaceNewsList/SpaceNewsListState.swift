@@ -18,7 +18,7 @@ public struct SpaceNewsListState: Equatable {
     public var items = IdentifiedArrayOf<SpaceNewsListItemState>()
     
     /// An instance of `spaceNewsPage`' submodule
-    public var newsPage : SpaceNewsPageState? = nil
+    public var newsPage: SpaceNewsPageState?
     
     // MARK: - Navigation
     
