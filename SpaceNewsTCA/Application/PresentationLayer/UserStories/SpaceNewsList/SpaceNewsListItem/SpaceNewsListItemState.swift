@@ -25,6 +25,9 @@ public struct SpaceNewsListItemState: Identifiable, Equatable {
     /// The news site name where the article is published.
     public let newsSite: String
     
+    /// If loader is active
+    public var isLoaderActive = false
+    
     // MARK: - Initializers
     
     public init(

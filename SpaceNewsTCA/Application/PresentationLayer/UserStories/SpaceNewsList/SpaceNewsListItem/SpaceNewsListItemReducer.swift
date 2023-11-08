@@ -17,9 +17,10 @@ public struct SpaceNewsListItemReducer: Reducer {
     public var body: some Reducer<SpaceNewsListItemState, SpaceNewsListItemAction> {
         Reduce { state, action in
             switch action {
-            default:
-                return .none
+            case .itemTapped:
+                state.isLoaderActive = true
             }
+            return .none
         }
     }
 }

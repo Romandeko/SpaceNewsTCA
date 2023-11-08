@@ -32,14 +32,12 @@ public struct SpaceNewsPageState: Equatable {
     
     // MARK: - Initializers
     
-    public init(
-        id: Int
-    ) {
-        self.id = id
-        self.title = ""
-        self.imageURL = nil
-        self.summary = ""
-        self.newsSite = ""
+    public init(article: ArticlePlainObject) {
+        self.id = article.id
+        self.title = article.title
+        self.imageURL = article.imageURL
+        self.summary = article.summary
+        self.newsSite = article.newsSite
     }
 }
 

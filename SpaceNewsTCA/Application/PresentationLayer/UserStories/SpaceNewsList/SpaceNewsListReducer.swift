@@ -38,7 +38,17 @@ public struct SpaceNewsListReducer: Reducer {
             case .articlesService(.success(.articlesObtained(let articles))):
                 state.items = IdentifiedArray(uniqueElements: articles.map(SpaceNewsListItemState.init))
             case .item(let id, action: .itemTapped):
-                state.newsPage = SpaceNewsPageState(id: id)
+                return articlesService
+                    .obtainArticle(withId: id)
+                    .publish()
+                    .map(ArticleServiceAction.articleWithIdObtained)
+                    .catchToEffect(SpaceNewsListAction.articlesService)
+            case .articlesService(.success(.articleWithIdObtained(let article))):
+                guard let index = state.items.firstIndex(where: { $0.id == article.id }) else {
+                    return .none
+                }
+                state.newsPage = SpaceNewsPageState(article: article)
+                state.items[index].isLoaderActive = false
                 return .send(.setNewsPageActive(true))
             case .setNewsPageActive(let value):
                 state.isNewsPageActive = value

@@ -28,11 +28,18 @@ public struct SpaceNewsListItemView: View {
                     .resizable()
                     .frame(width: 120, height: 90)
                     .cornerRadius(10)
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text(viewStore.title)
-                        .font(.system(size: 15,weight: .semibold))
-                    Text(viewStore.newsSite)
-                        .font(.system(size: 13))
+                        .font(.system(size: 15, weight: .semibold))
+                    HStack(spacing: 0) {
+                        Text(viewStore.newsSite)
+                            .font(.system(size: 15))
+                        if viewStore.isLoaderActive {
+                            Spacer()
+                            ProgressView()
+                                .frame(width: 10, height: 10)
+                        }
+                    }
                 }
             }
             .onTapGesture {
