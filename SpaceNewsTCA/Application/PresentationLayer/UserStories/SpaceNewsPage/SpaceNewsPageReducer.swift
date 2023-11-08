@@ -20,9 +20,7 @@ public struct SpaceNewsPageReducer: Reducer {
     
     // MARK: - Initializers
     
-    public init(
-        articlesService: ArticleService
-    ) {
+    public init(articlesService: ArticleService) {
         self.articlesService = articlesService
     }
     

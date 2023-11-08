@@ -45,11 +45,7 @@ public struct SpaceNewsPageView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 20, height: 20)
-                                    .foregroundColor(
-                                        viewStore.isArticleAddedToFavourite
-                                        ? .red
-                                        : .black
-                                    )
+                                    .foregroundColor(viewStore.isArticleAddedToFavourite ? .red : .black)
                             }
                         }
                         Text(viewStore.summary)
