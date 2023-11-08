@@ -1,3 +1,4 @@
+
 //
 //  SpaceNewsPageReducer.swift
 //  SpaceNewsTCA
@@ -41,6 +42,7 @@ public struct SpaceNewsPageReducer: Reducer {
                 state.newsSite = article.newsSite
                 state.summary = article.summary
                 state.imageURL = article.imageURL
+                state.isLoaderActive = false
             case .addToFavourite:
                 state.isArticleAddedToFavourite.toggle()
             default:
@@ -51,3 +53,4 @@ public struct SpaceNewsPageReducer: Reducer {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-//
+
 //  SpaceNewsPageState.swift
 //  SpaceNewsTCA
 //
@@ -30,6 +30,9 @@ public struct SpaceNewsPageState: Equatable {
     /// If article is added to favourite
     public var isArticleAddedToFavourite = false
     
+    /// If article is loaded
+    public var isLoaderActive = true
+    
     // MARK: - Initializers
     
     public init(
@@ -52,3 +55,5 @@ extension SpaceNewsPageState {
         "Published by \(newsSite)"
     }
 }
+
+
