@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 // MARK: - SpaceNewsPageState
 
 public struct SpaceNewsPageState: Equatable {
