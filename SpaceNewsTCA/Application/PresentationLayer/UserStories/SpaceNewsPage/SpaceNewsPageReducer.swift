@@ -19,9 +19,7 @@ public struct SpaceNewsPageReducer: Reducer {
     
     // MARK: - Initializers
     
-    public init(
-        articlesService: ArticleService
-    ) {
+    public init(articlesService: ArticleService) {
         self.articlesService = articlesService
     }
     
@@ -30,17 +28,6 @@ public struct SpaceNewsPageReducer: Reducer {
     public var body: some Reducer<SpaceNewsPageState, SpaceNewsPageAction> {
         Reduce { state, action in
             switch action {
-            case .onAppear:
-                return articlesService
-                    .obtainArticle(withId: state.id)
-                    .publish()
-                    .map(ArticleServiceAction.articleWithIdObtained)
-                    .catchToEffect(SpaceNewsPageAction.articlesService)
-            case .articlesService(.success(.articleWithIdObtained(let article))):
-                state.title = article.title
-                state.newsSite = article.newsSite
-                state.summary = article.summary
-                state.imageURL = article.imageURL
             case .addToFavourite:
                 state.isArticleAddedToFavourite.toggle()
             default:

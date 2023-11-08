@@ -44,11 +44,8 @@ public struct SpaceNewsListReducer: Reducer {
                     .map(ArticleServiceAction.articleWithIdObtained)
                     .catchToEffect(SpaceNewsListAction.articlesService)
             case .articlesService(.success(.articleWithIdObtained(let article))):
-                guard let index = state.items.firstIndex(where: { $0.id == article.id }) else {
-                    return .none
-                }
                 state.newsPage = SpaceNewsPageState(article: article)
-                state.items[index].isLoaderActive = false
+                state.items[id: article.id]?.isLoaderActive = false
                 return .send(.setNewsPageActive(true))
             case .setNewsPageActive(let value):
                 state.isNewsPageActive = value
